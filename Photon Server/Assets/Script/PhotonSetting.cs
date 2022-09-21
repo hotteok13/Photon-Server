@@ -35,6 +35,9 @@ public class PhotonSetting : MonoBehaviour
 
         // 입력한 지역을 설정합니다.
         PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = region.options[region.value].text;
+
+        //서버 접속
+        PhotonNetwork.LoadLevel("Photon Lobby");
     }
 
     public void LoginFailure(PlayFabError error)
@@ -63,6 +66,17 @@ public class PhotonSetting : MonoBehaviour
         };
 
         PlayFabClientAPI.RegisterPlayFabUser(request, SignUpSucces, SignUpFailure);// 회원 가입에 대한 유저 정보, 회원 가입이 성공했을 때 함수, 회원 가입이 실패했을 때 함수
+    }
+
+    public void Login()
+    {
+        var request = new LoginWithEmailAddressRequest
+        {
+            Email = email.text,
+            Password = password.text,
+        };
+
+        PlayFabClientAPI.LoginWithEmailAddress(request, LoginSuccess, LoginFailure);
     }
 
 }
