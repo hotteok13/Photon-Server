@@ -384,8 +384,13 @@
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
+"Assets/Script/Data.cs"
 "Assets/Script/PhotonManager.cs"
 "Assets/Script/PhotonSetting.cs"
+"Assets/Script/PopUp.cs"
+"Assets/SlimUI/Tech Menu/Scripts/ToolTip.cs"
+"Assets/SlimUI/Tech Menu/Scripts/UIElementDragger.cs"
+"Assets/SlimUI/Tech Menu/Scripts/UIManagerTech.cs"
 -langversion:9.0
 
 /deterministic
