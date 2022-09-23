@@ -11,10 +11,14 @@ public class PopUp : MonoBehaviour
     // PopUp 스크립트로 전역에서 접근할 수 있는 함수
     public static PopUp Show(string title,string massage)
     {
+        // gamePanel이 아직 생성이 되지 않았다면
         if (gamePanel == null)
         {
+            // Resources 폴더에 있는 Game Panel을 생성합니다
             gamePanel = Resources.Load<GameObject>("Game Panel");
         }
+        GameObject obj = Instantiate(gamePanel);
+
         PopUp window = gamePanel.GetComponent<PopUp>();
         window.UpdateContent(title, massage);
         return window;
