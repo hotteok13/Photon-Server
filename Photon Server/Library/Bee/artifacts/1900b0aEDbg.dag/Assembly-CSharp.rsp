@@ -385,6 +385,7 @@
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Script/Data.cs"
+"Assets/Script/Information.cs"
 "Assets/Script/LobbyCount.cs"
 "Assets/Script/PhotonManager.cs"
 "Assets/Script/PhotonSetting.cs"
