@@ -10,7 +10,8 @@ public class LobbyCount : MonoBehaviour
     {
         switch (Data.count)
         {
-            case 0: Data.count = 0;
+            case 0: 
+                Data.count = 0;
                 break;
             case 1:
                 Data.count = 1;

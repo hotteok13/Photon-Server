@@ -20,6 +20,8 @@ public class PhotonSetting : MonoBehaviour
     private void Awake()
     {
         eventSystem = EventSystem.current;
+
+        PlayFabSettings.TitleId = "707E4";
         // 처음은 Email Input Field를 선택하도록 설정합니다.
     }
 

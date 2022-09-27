@@ -115,6 +115,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:PHOTON_UNITY_NETWORKING
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
@@ -331,6 +332,8 @@
 -r:"C:/Users/Administrator/Desktop/Photon-Server/Photon Server/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/Administrator/Desktop/Photon-Server/Photon Server/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/Administrator/Desktop/Photon-Server/Photon Server/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Dypsloom.CharacterController.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Dypsloom.Shared.Utility.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonChat.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonRealtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Demos.ref.dll"
@@ -385,8 +388,10 @@
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Script/Data.cs"
+"Assets/Script/GameManager.cs"
 "Assets/Script/Information.cs"
 "Assets/Script/LobbyCount.cs"
+"Assets/Script/PhotonControl.cs"
 "Assets/Script/PhotonManager.cs"
 "Assets/Script/PhotonSetting.cs"
 "Assets/Script/PopUp.cs"
