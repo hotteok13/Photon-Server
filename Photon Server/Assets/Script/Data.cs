@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Data : MonoBehaviour
 {
-    static public int count;
+    static public int count=0;
 
 }

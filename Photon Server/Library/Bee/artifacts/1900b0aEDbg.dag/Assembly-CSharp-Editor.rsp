@@ -120,6 +120,7 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:CROSS_PLATFORM_INPUT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
@@ -433,6 +434,12 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.Culling.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.API.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.PUN.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.PUN.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonVoice.Utilities.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PlayFab.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PlayFabEditorExtensions.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/PlayFabSDKEditor.ref.dll"
@@ -467,6 +474,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Photon/PhotonChat/Demos/DemoChat/Editor/ChatEditor.cs"
+"Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
 "Assets/SlimUI/Editor/SlimUIWindow.cs"
 -langversion:9.0
 

@@ -1424,7 +1424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1748811250}
         m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
-        m_MethodName: OnClickCreateRoom
+        m_MethodName: OnCreatedRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

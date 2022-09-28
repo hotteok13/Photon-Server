@@ -8,7 +8,7 @@ public class LobbyCount : MonoBehaviour
 
     public void Selected(int count)
     {
-        switch (Data.count)
+        switch (count)
         {
             case 0: 
                 Data.count = 0;
