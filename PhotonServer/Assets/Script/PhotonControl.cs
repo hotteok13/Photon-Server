@@ -8,10 +8,12 @@ public class PhotonControl : MonoBehaviourPun
     [SerializeField] float speed = 5.0f;
     [SerializeField] float angleSpeed;
 
+    private Animator animator;
     [SerializeField] Camera cam;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         // 현재 플레이어가 나 자신이라면
         if(photonView.IsMine)
         {
@@ -32,6 +34,12 @@ public class PhotonControl : MonoBehaviourPun
             return; 
         }
 
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetBool("Attack", true);
+        }
+        
         Vector3 direction = new Vector3
         (
            Input.GetAxis("Horizontal"),
