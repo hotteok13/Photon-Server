@@ -35,9 +35,9 @@ public class PhotonControl : MonoBehaviourPun
         }
 
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
-            animator.SetBool("Attack", true);
+            animator.SetTrigger("Attack");
         }
         
         Vector3 direction = new Vector3
@@ -55,5 +55,21 @@ public class PhotonControl : MonoBehaviourPun
             Input.GetAxis("Mouse X") * angleSpeed * Time.deltaTime,
             0
         );
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Crystal(Clone)")
+        {
+            PhotonView view = other.gameObject.GetComponent<PhotonView>();
+
+            if (view.IsMine)
+            {
+                // 충돌한 물체가 네트워크 객체라면
+                // 충돌당한 네트워크 객체를 파괴합니다.
+                PhotonNetwork.Destroy(other.gameObject);
+            }
+        }
     }
 }

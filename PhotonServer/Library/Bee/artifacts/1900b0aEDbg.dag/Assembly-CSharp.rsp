@@ -427,6 +427,7 @@
 "Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/Scripts/UiExtensions.cs"
 "Assets/Script/Billboard.cs"
 "Assets/Script/ChatManager.cs"
+"Assets/Script/CreateCrystal.cs"
 "Assets/Script/Data.cs"
 "Assets/Script/GameManager.cs"
 "Assets/Script/Information.cs"

@@ -14,6 +14,18 @@ public class GameManager : MonoBehaviourPunCallbacks
             "Character", new Vector3 ( Random.Range(0, 5), 1, Random.Range(0, 5)),Quaternion.identity
         );
     }
+    
+    public void ExitRoom()
+    {
+        // PhotonNetwork.LeaveRoom() : 방을 나간다
+        PhotonNetwork.LeaveRoom();
+        
+    }
 
-  
+    // 현재 플레이어가 룸에서 나갔다면 호출되는 함수
+    public override void OnLeftRoom()
+    {
+        PhotonNetwork.LoadLevel("Photon Room");
+    }
+
 }
