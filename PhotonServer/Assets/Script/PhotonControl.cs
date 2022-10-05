@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using PlayFab;
+using PlayFab.ClientModels;
 
-public class PhotonControl : MonoBehaviourPun
+public class PhotonControl : MonoBehaviourPun, IPunObservable
 {
     [SerializeField] float speed = 5.0f;
     [SerializeField] float angleSpeed;
 
     private Animator animator;
+    public int score;
     [SerializeField] Camera cam;
 
     void Start()
@@ -58,10 +61,35 @@ public class PhotonControl : MonoBehaviourPun
 
     }
 
+    // 실시간으로 데이터를 처리하기 위한 동기화 함수
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        //로컬 오브젝트라면 쓰기 부분이 실행됩니다
+        stream.SendNext(score);
+        if (stream.IsWriting)
+        {
+            // 네트워크를 통해 score 값을 보냅니다.
+            stream.SendNext(score);
+        }
+        else// 원격 오브젝트라면 읽기 부분이 실행됩니다.
+        {
+            score = (int)stream.ReceiveNext();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Crystal(Clone)")
         {
+
+            if (photonView.IsMine)
+            {
+                score++;
+            }
+
+            PlayFabDataSave();
+           
+
             PhotonView view = other.gameObject.GetComponent<PhotonView>();
 
             if (view.IsMine)
@@ -71,5 +99,23 @@ public class PhotonControl : MonoBehaviourPun
                 PhotonNetwork.Destroy(other.gameObject);
             }
         }
+    }
+
+    public void PlayFabDataSave()
+    {
+        PlayFabClientAPI.UpdatePlayerStatistics(
+            new UpdatePlayerStatisticsRequest
+            {
+                Statistics = new List<StatisticUpdate>
+                    {
+                        new StatisticUpdate
+                        {
+                            StatisticName="Score",Value=score
+                        },
+                    }
+            },
+            (result) => { Debug.Log("값 저장 성공"); },
+            (error) => { Debug.Log("값 저장 실패"); }
+        );
     }
 }

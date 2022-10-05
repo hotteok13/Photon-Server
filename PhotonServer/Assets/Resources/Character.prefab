@@ -5409,6 +5409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   angleSpeed: 300
+  score: 0
   cam: {fileID: 8393890783464463274}
 --- !u!114 &8393890782629231448
 MonoBehaviour:
@@ -5445,6 +5446,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 8393890782629231454}
   - {fileID: 8393890782629231448}
   - {fileID: 2603256877553790477}
   sceneViewId: 0

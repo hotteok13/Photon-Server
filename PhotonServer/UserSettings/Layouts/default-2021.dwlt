@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 41
+  controlID: 80
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 42
+  controlID: 81
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,8 +92,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -118,8 +118,8 @@ MonoBehaviour:
     y: 0
     width: 385
     height: 562
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 43
+  controlID: 33
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 44
+  controlID: 93
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -406,22 +406,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Administrator\Desktop\Photon-Server\PhotonServer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c680000
-    m_LastClickedID: 26636
-    m_ExpandedIDs: 00000000de67000052680000586800006668000000ca9a3b
+    m_SelectedIDs: ac610000
+    m_LastClickedID: 25004
+    m_ExpandedIDs: 000000006261000064610000666100006861000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -449,7 +449,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de670000
+    m_ExpandedIDs: 0000000062610000646100006661000068610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -540,7 +540,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 381
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -577,9 +577,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 58700000
+      m_SelectedIDs: 2a9d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: ba95ffff7ea6ffffb8b1ffff0ab3ffff8eceffff4cd9ffff9cdaffffc2f0ffff2cfbffff
+      m_ExpandedIDs: 7672fffff082ffff1285fffff88cffff009affff3cbdffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -828,9 +828,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 24.678818, y: -1163.2511, z: -16.860847}
+    m_Target: {x: 2.9673102, y: 2.462926, z: -0.23027277}
     speed: 2
-    m_Value: {x: 24.678818, y: -1163.2511, z: -16.860847}
+    m_Value: {x: 2.9673102, y: 2.462926, z: -0.23027277}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -877,9 +877,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.111344226, y: -0.71085745, z: 0.68489176, w: -0.115447335}
+    m_Target: {x: 0.0059277136, y: 0.993225, z: 0.05785946, w: -0.10135969}
     speed: 2
-    m_Value: {x: -0.1115105, y: -0.70978653, z: 0.68591595, w: -0.115273274}
+    m_Value: {x: 0.005927262, y: 0.99314934, z: 0.057855055, w: -0.10135197}
   m_Size:
     m_Target: 1.2831542
     speed: 2
@@ -889,8 +889,8 @@ MonoBehaviour:
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 0.8805601
-    m_SpeedNormalized: 0.44000006
+    m_Speed: 1.0604701
+    m_SpeedNormalized: 0.53000003
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
