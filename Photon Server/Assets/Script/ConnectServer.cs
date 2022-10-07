@@ -8,6 +8,7 @@ public class ConnectServer : MonoBehaviourPunCallbacks
 
     public void SelectLobby(string text)
     {
+        // Challeger Server
         serverName = text;
 
         // 서버 접속
@@ -21,6 +22,7 @@ public class ConnectServer : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
+        // Challenger Server
         PhotonNetwork.JoinLobby(new TypedLobby(serverName, LobbyType.Default));
     }
 }
