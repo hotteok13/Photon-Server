@@ -217,8 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 218332963}
   - component: {fileID: 218332966}
-  - component: {fileID: 218332965}
   - component: {fileID: 218332964}
+  - component: {fileID: 218332967}
   m_Layer: 5
   m_Name: Unique Lobby
   m_TagString: Untagged
@@ -287,7 +287,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 218332965}
+  m_TargetGraphic: {fileID: 218332967}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -303,7 +303,15 @@ MonoBehaviour:
           m_StringArgument: Unique Server
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &218332965
+--- !u!222 &218332966
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218332962}
+  m_CullTransparentMesh: 1
+--- !u!114 &218332967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,7 +320,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 218332962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -323,24 +331,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &218332966
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218332962}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1001 &375589525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -473,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0000166893}
+  m_AnchoredPosition: {x: 0, y: 0.0000052527935}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &470451332
@@ -677,7 +674,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1557634675}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9741785
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -987,8 +984,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1290403185}
   - component: {fileID: 1290403188}
-  - component: {fileID: 1290403187}
   - component: {fileID: 1290403186}
+  - component: {fileID: 1290403189}
   m_Layer: 5
   m_Name: Platinum Lobby
   m_TagString: Untagged
@@ -1057,7 +1054,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1290403187}
+  m_TargetGraphic: {fileID: 1290403189}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1073,7 +1070,15 @@ MonoBehaviour:
           m_StringArgument: Platinum Server
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1290403187
+--- !u!222 &1290403188
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290403184}
+  m_CullTransparentMesh: 1
+--- !u!114 &1290403189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1082,7 +1087,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1290403184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1093,24 +1098,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1290403188
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290403184}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1439941528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,8 +1224,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1555511982}
   - component: {fileID: 1555511985}
-  - component: {fileID: 1555511984}
   - component: {fileID: 1555511983}
+  - component: {fileID: 1555511986}
   m_Layer: 5
   m_Name: Challenger Lobby
   m_TagString: Untagged
@@ -1300,7 +1294,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1555511984}
+  m_TargetGraphic: {fileID: 1555511986}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1316,7 +1310,15 @@ MonoBehaviour:
           m_StringArgument: Challenger Lobby
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1555511984
+--- !u!222 &1555511985
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555511981}
+  m_CullTransparentMesh: 1
+--- !u!114 &1555511986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1325,7 +1327,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555511981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1336,24 +1338,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1555511985
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555511981}
-  m_CullTransparentMesh: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1557634674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1663,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   webImage:
   - {fileID: 942061430}
+  - {fileID: 218332967}
+  - {fileID: 1290403189}
+  - {fileID: 1555511986}
+  imageAddress:
+  - 
+  - 
+  - 
+  - 
 --- !u!4 &1613111049
 Transform:
   m_ObjectHideFlags: 0

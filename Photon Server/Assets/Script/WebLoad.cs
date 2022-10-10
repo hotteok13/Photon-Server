@@ -6,11 +6,21 @@ using UnityEngine.Networking;
 public class WebLoad : MonoBehaviour
 {
     [SerializeField] RawImage [] webImage;
+
+    [SerializeField] string[] imageAddress;
     void Awake()
     {
-        
+
         // 데이터를 로드할 때
-        StartCoroutine(WebImageLoad("https://raw.githubusercontent.com/Unity2033/Unity-3D-Example/main/Assets/Class/Photon%20Server/Texture/Ice%20Kingdom.jpg"));
+
+        imageAddress[0] = "https://raw.githubusercontent.com/Unity2033/Unity-3D-Example/main/Assets/Class/Photon%20Server/Texture/Ice%20Kingdom.jpg";
+        imageAddress[1] = "https://raw.githubusercontent.com/Unity2033/Unity-3D-Example/main/Assets/Class/Photon%20Server/Texture/Leader%20Board%20Panel.png";
+        imageAddress[2] = "https://raw.githubusercontent.com/Unity2033/Unity-3D-Example/main/Assets/Class/Photon%20Server/Texture/Leader%20Board%20Panel.png";
+        imageAddress[3] = "https://raw.githubusercontent.com/Unity2033/Unity-3D-Example/main/Assets/Class/Photon%20Server/Texture/Leader%20Board%20Panel.png";
+        for (int i = 0; i < webImage.Length; i++)
+        {
+            StartCoroutine(WebImageLoad(imageAddress[i]));
+        }
     }
 
     
