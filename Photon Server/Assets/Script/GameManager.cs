@@ -5,14 +5,28 @@ using Photon.Pun;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-
     void Start()
     {
+        switch (DataManager.characterCount)
+        {
+            case 1:
+                CreateCharacter("Character");
+                break;
+            case 2:
+                CreateCharacter("Character2");
+                break;
+            case 3:
+                CreateCharacter("Character3");
+                break;
+        }
         // 포톤 서버에서 오브젝트를 생성하는 방법
-        PhotonNetwork.Instantiate
-        (
-            "Character", new Vector3 ( Random.Range(0, 5), 1, Random.Range(0, 5)),Quaternion.identity
-        );
+        
+    
+    }
+
+    public void CreateCharacter(string name)
+    {
+        PhotonNetwork.Instantiate(name, new Vector3(Random.Range(0, 5), 1, Random.Range(0, 5)), Quaternion.identity);
     }
 
     public void ExitRoom()

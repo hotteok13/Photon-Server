@@ -434,6 +434,7 @@
 "Assets/Script/ChatManager.cs"
 "Assets/Script/ConnectServer.cs"
 "Assets/Script/CreateCrystal.cs"
+"Assets/Script/DataManager.cs"
 "Assets/Script/GameManager.cs"
 "Assets/Script/Information.cs"
 "Assets/Script/PhotonControl.cs"
